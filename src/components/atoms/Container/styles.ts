@@ -1,8 +1,7 @@
 import { styled } from "styles/stitches.config";
 
 export const Wrapper = styled("div", {
-  flexDirection: "column",
-  display: "flex",
+  margin: "0 auto",
   w: "100%",
   "@sm": {
     maxW: "640px",

@@ -5,6 +5,8 @@ import { ReactElement } from "react";
 import { DefaultLayoutProps } from "./types";
 import { Container } from "components/atoms/Container";
 import { Wrapper } from "./styles";
+import { Header } from "components/molecules/Header";
+import { Footer } from "components/molecules/Footer";
 
 export function DefaultLayout({
   children,
@@ -12,7 +14,9 @@ export function DefaultLayout({
 }: DefaultLayoutProps): ReactElement {
   return (
     <Wrapper>
+      <Header />
       <Container>{children}</Container>
+      <Footer />
     </Wrapper>
   );
 

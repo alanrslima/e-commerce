@@ -1,34 +1,10 @@
 import { styled } from "styles/stitches.config";
 
 export const Wrapper = styled("div", {
-  display: "flex",
-  justifyContent: "center",
-  h: "100%",
+  display: "block",
+  // alignItems: "center",
   w: "100%",
   background: "$background",
+  overflowY: "scroll",
+  // flexDirection: "column",
 });
-
-// export const Container = styled(Flex, {
-//   h: "100vh",
-//   w: "100vw",
-//   bg: "$gray100",
-//   zIndex: "$0",
-// });
-
-// export const Content = styled(Flex, {
-//   flex: "1",
-//   h: "100%",
-//   minH: "100%",
-//   overflow: "scroll",
-//   p: "$0 $5 $9",
-// });
-
-// export const InnerContent = styled(Flex, {
-//   direction: "column",
-//   w: "100%",
-//   h: "max-content",
-//   maxW: "1920px",
-//   mx: "auto",
-//   py: "$7",
-//   // overflowY: 'hidden',
-// });

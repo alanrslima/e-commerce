@@ -3,11 +3,11 @@ import { DefaultLayout } from "layouts/DefaultLayout";
 import { useRouter } from "next/router";
 import { ReactElement, useEffect } from "react";
 
-function HomePage(): ReactElement {
+function SearchPage(): ReactElement {
   const { query } = useRouter();
 
   useEffect(() => {
-    console.log(query?.search);
+    // Get search items
   }, [query]);
 
   return (
@@ -17,4 +17,4 @@ function HomePage(): ReactElement {
   );
 }
 
-export default HomePage;
+export default SearchPage;
