@@ -10,7 +10,7 @@ import {
 } from "./styles";
 import { SaleItemProps } from "./types";
 
-export function SaleItem({}: SaleItemProps): ReactElement {
+export function SaleItem({ title }: SaleItemProps): ReactElement {
   return (
     <Wrapper>
       <Image
@@ -18,7 +18,7 @@ export function SaleItem({}: SaleItemProps): ReactElement {
         src="https://http2.mlstatic.com/D_NQ_NP_970858-MLA47660639287_092021-V.webp"
       />
       <Content>
-        <Title>Titulo de venda do produto</Title>
+        <Title>{title}</Title>
         <Subtitle>Vendido por fulano de tal</Subtitle>
 
         <Value>R$ 20,00</Value>

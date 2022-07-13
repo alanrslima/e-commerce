@@ -9,7 +9,7 @@ export function Header({}: HeaderProps): ReactElement {
   const router = useRouter();
 
   function handleSubmitSearch(search: string) {
-    router.push(`/${search}`);
+    router.push({ pathname: "/", query: { search } });
   }
 
   return (
