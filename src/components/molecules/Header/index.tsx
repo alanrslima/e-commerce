@@ -12,10 +12,20 @@ export function Header({}: HeaderProps): ReactElement {
     router.push({ pathname: "/", query: { search } });
   }
 
+  function handleCart() {
+    router.push({ pathname: "/cart" });
+  }
+
+  function handleHome() {
+    router.push({ pathname: "/" });
+  }
+
   return (
     <Wrapper>
       <Container>
+        <button onClick={handleHome}>Logo</button>
         <SearchInput onSubmit={handleSubmitSearch} />
+        <button onClick={handleCart}>Carrinho</button>
       </Container>
     </Wrapper>
   );

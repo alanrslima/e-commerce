@@ -1,26 +1,34 @@
 [
   {
     "id": 1,
-    "title": "Jogo de panelas"
+    "title": "Jogo de panelas",
+    "price": 100,
+    "sellingPrice": 90
   },
   {
     "id": 2,
-    "title": "Jogo de panelas"
+    "title": "Jogo de panelas",
+    "price": 99,
+    "sellingPrice": 50
   },
   {
     "id": 3,
-    "title": "Jogo de panelas"
+    "title": "Jogo de panelas",
+    "price": 100
   },
   {
     "id": 4,
-    "title": "Jogo de panelas"
+    "title": "Jogo de panelas",
+    "price": 100
   },
   {
     "id": 5,
-    "title": "Jogo de panelas"
+    "title": "Jogo de panelas",
+    "price": 100
   },
   {
     "id": 6,
-    "title": "Jogo de panelas"
+    "title": "Jogo de panelas",
+    "price": 100
   }
 ]

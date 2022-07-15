@@ -1,3 +1,4 @@
+import { MessageContainer } from "components/molecules/MessageContainer";
 import { SaleList } from "components/organisms/SaleList";
 import { DefaultLayout } from "layouts/DefaultLayout";
 import { useRouter } from "next/router";
@@ -7,8 +8,6 @@ import { Product } from "types/product";
 
 function HomePage(): ReactElement {
   const { query } = useRouter();
-
-  console.log(query);
 
   const [products, setProducts] = useState<Product[]>([]);
 
@@ -23,7 +22,15 @@ function HomePage(): ReactElement {
 
   return (
     <DefaultLayout>
-      <SaleList products={products} />
+      {products?.length ? (
+        <SaleList products={products} />
+      ) : (
+        <MessageContainer
+          title="Ops, nenhum produto encontrado!"
+          subTitle="Tente verificar a ortografia ou usar termos mais genéricos
+        "
+        />
+      )}
     </DefaultLayout>
   );
 }
